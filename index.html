@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="favicon.png" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device.width, initial-scale=1.0" name="viewport">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'/>
+    <meta content="width=device-width" name="viewport"/>
+    <link href="./style.css" id="stylesheet" rel="stylesheet" type="text/css"/>
+    <title>CSS Animator</title>
+
+    <style>
+        :root {
+            --r: 255;
+            --g: 255;
+            --b: 255;
+            --intensity: 50;
+            --color: rgb(var(--r), var(--g), var(--b));
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+	<div class="flex-middle morph" style="background:white;">
+		<div style="transform: translateY(-100px);">
+			<form>
+			   <div class="cube">
+				<div class="cube__face cube__face--front"></div>
+				<div class="cube__face cube__face--back"></div>
+				<div class="cube__face cube__face--right"></div>
+				<div class="cube__face cube__face--left"></div>
+				<div class="cube__face cube__face--top"></div>
+				<div class="cube__face cube__face--bottom"></div>
+			  </div>
+			</form>
+		</div>
+    </div>
+    <div class="flex-middle morph" style="background:white;">
+        <form>
+            <p>
+			TODO
+			</p>
+        </form>
+    </div>
+    <footer>
+        <div>website built by ❤ Aymeric Bizouarn</div>
+        <div style="text-align: right; font-size: 10px;"><a href="https://icons8.com/icon/22318/color-wheel"
+                                                            style="color: grey;"
+                                                            target="_blank">Favicon</a> by <a
+                href="https://icons8.com" style="color: grey;" target="_blank">Icons8</a></div>
+    </footer>
+</div>
+<script src="/main.js" type="module"></script>
+</body>
+</html>
