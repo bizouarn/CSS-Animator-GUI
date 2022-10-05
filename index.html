@@ -19,7 +19,7 @@
         }
     </style>
   <script type="module" crossorigin src="/Color-converter-GUI/assets/index.42fe4937.js"></script>
-  <link rel="stylesheet" href="/Color-converter-GUI/assets/index.d80eb393.css">
+  <link rel="stylesheet" href="/Color-converter-GUI/assets/index.90e442f2.css">
 </head>
 <body>
 <div id="app">
@@ -27,29 +27,42 @@
 		<div style="transform: translateY(-100px);">
 			<form>
 			   <div class="cube">
-				<div class="cube__face cube__face--front"></div>
-				<div class="cube__face cube__face--back"></div>
-				<div class="cube__face cube__face--right"></div>
-				<div class="cube__face cube__face--left"></div>
-				<div class="cube__face cube__face--top"></div>
-				<div class="cube__face cube__face--bottom"></div>
+				<div class="cube__face cube__face--front morph"></div>
+				<div class="cube__face cube__face--back morph"></div>
+				<div class="cube__face cube__face--right morph"></div>
+				<div class="cube__face cube__face--left morph"></div>
+				<div class="cube__face cube__face--top morph"></div>
+				<div class="cube__face cube__face--bottom morph"></div>
 			  </div>
 			</form>
 		</div>
     </div>
     <div class="flex-middle morph" style="background:white;">
         <form>
-            <p>
-			TODO
-			</p>
+            <textarea id="cudeText" rows="5" 
+                onchange="document.getElementById('cubeStyle').innerHTML = this.value"
+                placeholder="Enter CSS">
+.cube{ 
+    transform: rotateX(45deg) rotateY(45deg);
+    transition: transform 1s;
+}
+            </textarea>
         </form>
+        <style id="cubeStyle">
+            .cube{ 
+                transform: rotateX(45deg) rotateY(45deg);
+                transition: transform 1s; 
+            }
+        </style>
     </div>
     <footer>
         <div>website built by ❤ Aymeric Bizouarn</div>
-        <div style="text-align: right; font-size: 10px;"><a href="https://icons8.com/icon/22318/color-wheel"
-                                                            style="color: grey;"
-                                                            target="_blank">Favicon</a> by <a
-                href="https://icons8.com" style="color: grey;" target="_blank">Icons8</a></div>
+        <div style="text-align: right; font-size: 10px;">
+            <a href="https://icons8.com/icon/22318/color-wheel"
+                style="color: grey;"
+                target="_blank">Favicon</a> by <a
+                href="https://icons8.com" style="color: grey;" target="_blank">Icons8</a>
+        </div>
     </footer>
 </div>
 
