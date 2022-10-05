@@ -36,26 +36,27 @@
 		</div>
     </div>
     <div class="flex-middle morph" style="background:white;">
-        <form>
+        <form style="width: 100%; min-width: 50vh;">
             <textarea id="cudeText" rows="5" 
+                style="min-height: 250px;"
                 onchange="document.getElementById('cubeStyle').innerHTML = document.getElementById('cudeText').value"
                 placeholder="Enter CSS">
-.cube{ 
-    transform: rotateX(45deg) rotateY(45deg);
+.cube:hover{ 
+    transform: rotateX(-25deg) rotateY(45deg);
     transition: transform 1s;
 }
-.cube:hover{ 
+.cube{ 
     transform: rotateX(0deg) rotateY(0deg);
     transition: transform 1s; 
 }
             </textarea>
         </form>
         <style id="cubeStyle">
-            .cube{ 
-                transform: rotateX(45deg) rotateY(45deg);
+            .cube:hover{ 
+                transform: rotateX(-25deg) rotateY(45deg);
                 transition: transform 1s;
             }
-            .cube:hover{ 
+            .cube{ 
                 transform: rotateX(0deg) rotateY(0deg);
                 transition: transform 1s; 
             }
