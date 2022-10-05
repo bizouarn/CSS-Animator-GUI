@@ -55,6 +55,10 @@
         <style id="cubeStyle">
             .cube{ 
                 transform: rotateX(45deg) rotateY(45deg);
+                transition: transform 1s;
+            }
+            .cube:hover{ 
+                transform: rotateX(0deg) rotateY(0deg);
                 transition: transform 1s; 
             }
         </style>
