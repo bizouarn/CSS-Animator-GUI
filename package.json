@@ -1,12 +1,11 @@
 {
-  "name": "color-converter-gui",
+  "name": "css-animator-gui",
   "private": true,
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base /CSS-Animator-GUI/",
-    "preview": "vite preview",
-    "lint": "npx -y eslint main.js --fix"
+    "preview": "vite preview"
   },
   "engines": {
     "node": "16"

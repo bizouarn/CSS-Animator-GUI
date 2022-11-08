@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <link href="favicon.png" rel="icon" type="image/svg+xml"/>
-    <meta content="width=device.width, initial-scale=1.0" name="viewport">
-    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'/>
-    <meta content="width=device-width" name="viewport"/>
-    <link href="./style.css" id="stylesheet" rel="stylesheet" type="text/css"/>
-    <title>CSS Animator</title>
-
-    <style>
-        :root {
-            --r: 255;
-            --g: 255;
-            --b: 255;
-            --intensity: 50;
-            --color: rgb(var(--r), var(--g), var(--b));
-        }
-    </style>
+	<meta charset="UTF-8"/>
+	<link href="favicon.png" rel="icon" type="image/svg+xml"/>
+	<meta content="width=device.width, initial-scale=1.0" name="viewport">
+	<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'/>
+	<meta content="width=device-width" name="viewport"/>
+	<link href="./style.css" id="stylesheet" rel="stylesheet" type="text/css"/>
+	<title>CSS Animator</title>
+	<script type="text/javascript" src="/CDN/sign.js"></script>
+	<style>
+		:root {
+			--r: 255;
+			--g: 255;
+			--b: 255;
+			--intensity: 50;
+			--color: rgb(var(--r), var(--g), var(--b));
+		}
+	</style>
 </head>
 <body>
 <div id="app">
 	<div class="flex-middle morph" style="background:white;">
 		<div style="transform: translateY(-100px);">
 			<form>
-			   <div class="cube">
-				<div class="cube__face cube__face--front morph"></div>
-				<div class="cube__face cube__face--back morph"></div>
-				<div class="cube__face cube__face--right morph"></div>
-				<div class="cube__face cube__face--left morph"></div>
-				<div class="cube__face cube__face--top morph"></div>
-				<div class="cube__face cube__face--bottom morph"></div>
-			  </div>
+				<div class="cube">
+					<div class="cube__face cube__face--front morph"></div>
+					<div class="cube__face cube__face--back morph"></div>
+					<div class="cube__face cube__face--right morph"></div>
+					<div class="cube__face cube__face--left morph"></div>
+					<div class="cube__face cube__face--top morph"></div>
+					<div class="cube__face cube__face--bottom morph"></div>
+				</div>
 			</form>
 		</div>
-    </div>
-    <div class="flex-middle morph" style="background:white;">
-        <form style="width: 100%; min-width: 50vh;">
-            <textarea id="cudeText" rows="5" 
-                style="min-height: 250px;"
-                onchange="document.getElementById('cubeStyle').innerHTML = document.getElementById('cudeText').value"
-                placeholder="Enter CSS">
+	</div>
+	<div class="flex-middle morph" style="background:white;">
+		<form style="width: 100%; min-width: 50vh;">
+			<textarea id="cudeText" rows="5" 
+				style="min-height: 250px;"
+				onchange="document.getElementById('cubeStyle').innerHTML = document.getElementById('cudeText').value"
+				placeholder="Enter CSS">
 .cube:hover{ 
-    transform: rotateX(-25deg) rotateY(45deg);
-    transition: transform 1s;
+	transform: rotateX(-25deg) rotateY(45deg);
+	transition: transform 1s;
 }
 .cube{ 
-    transform: rotateX(0deg) rotateY(0deg);
-    transition: transform 1s; 
+	transform: rotateX(0deg) rotateY(0deg);
+	transition: transform 1s; 
 }
-            </textarea>
-        </form>
-        <style id="cubeStyle">
-            .cube:hover{ 
-                transform: rotateX(-25deg) rotateY(45deg);
-                transition: transform 1s;
-            }
-            .cube{ 
-                transform: rotateX(0deg) rotateY(0deg);
-                transition: transform 1s; 
-            }
-        </style>
-    </div>
-    <footer>
-        <div>website built by ❤ Aymeric Bizouarn</div>
-        <div style="text-align: right; font-size: 10px;">
-            <a href="https://icons8.com/icon/22318/color-wheel"
-                style="color: grey;"
-                target="_blank">Favicon</a> by <a
-                href="https://icons8.com" style="color: grey;" target="_blank">Icons8</a>
-        </div>
-    </footer>
+			</textarea>
+		</form>
+		<style id="cubeStyle">
+			.cube:hover{ 
+				transform: rotateX(-25deg) rotateY(45deg);
+				transition: transform 1s;
+			}
+			.cube{ 
+				transform: rotateX(0deg) rotateY(0deg);
+				transition: transform 1s; 
+			}
+		</style>
+	</div>
+	<footer>
+		<div>website built by ❤ Aymeric Bizouarn</div>
+		<div style="text-align: right; font-size: 10px;">
+			<a href="https://icons8.com/icon/22318/color-wheel"
+				style="color: grey;"
+				target="_blank">Favicon</a> by <a
+				href="https://icons8.com" style="color: grey;" target="_blank">Icons8</a>
+		</div>
+	</footer>
 </div>
-<script src="/main.js" type="module"></script>
 </body>
 </html>
