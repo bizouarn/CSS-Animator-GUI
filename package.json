@@ -5,12 +5,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base /CSS-Animator-GUI/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx -y eslint index.html --fix"
   },
   "engines": {
     "node": "20"
   },
   "devDependencies": {
-    "vite": "^5.2.14"
+    "eslint-plugin-html": "^8.1.2",
+    "vite": "^5.2.14",
+    "vite-plugin-html": "^3.2.2"
   }
 }
