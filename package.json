@@ -9,11 +9,11 @@
     "lint": "npx -y eslint index.html --fix"
   },
   "engines": {
-    "node": "20"
+    "node": ">= 20"
   },
   "devDependencies": {
     "eslint-plugin-html": "^8.1.2",
-    "vite": "^5.4.14",
+    "vite": "^6.3.5",
     "vite-plugin-html": "^3.2.2"
   }
 }
